@@ -1512,3 +1512,14 @@ plt.xlabel("Model")
 plt.ylabel("Czas działania [s]")
 plt.legend(title=None)
 plt.show()
+
+
+
+
+'''
+PRZYKŁAD EKSPORTU WYSZKOLONEGO MODELU / EXAMPLE OF EXPORT OF TRAINED MODEL
+'''
+
+import joblib
+
+joblib.dump(my_iforest5, 'TrainedModels/isolation_forest.joblib')
